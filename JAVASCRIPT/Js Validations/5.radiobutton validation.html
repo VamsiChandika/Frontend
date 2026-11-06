@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function validateform() {
+
+            if (document.getElementById('r1').checked == false && document.getElementById('r2').checked == false && document.getElementById('r3').checked == false) {
+                alert("Please select gender");
+                return false;
+            }
+        }  
+    </script>
+</head>
+
+<body>
+    <form name="f1" action="abc.jsp" onsubmit="return validateform()">
+        <label>Gender</label>
+        <input type="radio" value="male" id="r1" name="gender">Male
+        <input type="radio" value="female" id="r2" name="gender">Female
+        <input type="radio" value="others" id="r3" name="gender">Others
+        <br>
+        <input type="submit" value="validate">
+    </form>
+</body>
+
+</html>

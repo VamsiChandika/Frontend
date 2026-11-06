@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>
+    ADDITION OF TWO NUMBERS
+  </h1>
+  
+  <label>enter firstnumber</label>
+  <input id="1st" type="number">
+  <br>
+
+  <label>enter secondnumber</label>
+  <input id="2nd" type="number">
+  <br>
+  <button onclick="myadd()">addition</button>
+  <span id="i"></span>
+  <br>
+  <button onclick="myadd()">multiplication</button>
+  <span id="m"></span>
+ 
+  <script>
+   let myadd=()=>{
+   let st=eval(document.getElementById("1st").value)
+   let nd=eval(document.getElementById("2nd").value)
+   reult=(nd+st)
+   relt=nd*st
+   document.getElementById("i").style.border='2px solid red'
+   document.getElementById("i").innerHTML=reult
+   document.getElementById("m").style.border='2px solid red'
+   document.getElementById("m").innerHTML=relt
+   }
+
+  </script>
+</body>
+</html>

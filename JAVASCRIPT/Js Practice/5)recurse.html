@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script> 
+    a= eval(prompt("enter first number:", ""))
+   
+    function add(n1) {
+      
+      if (n1==1)
+      return 1
+      else
+      return n1*add(n1-1)
+    }
+    m = add(a)
+    document.write(m)
+
+  </script>
+</body>
+</html>

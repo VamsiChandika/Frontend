@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    fun1 = () => {
+      let m = document.getElementById("in1").value
+      document.getElementById("span1").innerHTML = m
+    }
+    fun2 = () => {
+      let m = document.getElementById("in2").value
+      document.getElementById("span2").innerHTML = m
+    }
+    fun3 = () => {
+      let m = document.getElementById("in3").value
+      document.getElementById("span3").innerHTML = m
+    }
+  </script>
+</head>
+
+<body>
+  <input type="text" onkeydown="fun1()" id="in1">
+  <span>enter a name:</span><span id="span1"></span><br>
+  <input type="text" onkeypress="fun2()" id="in2">
+  <span>enter a name:</span><span id="span2"></span><br>
+  <input type="text" onkeyup="fun3()" id="in3">
+  <span>enter a name:</span><span id="span3"></span>
+</body>
+
+</html>

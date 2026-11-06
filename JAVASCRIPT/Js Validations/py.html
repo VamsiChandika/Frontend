@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    func = () => {
+      first = document.getElementById("p1").value
+      second = document.getElementById("p2").value
+      if (first === second) {
+        document.getElementById("span").innerHTML = "PASSWORD SUCESSFULLY TAKEN"
+        return true;
+      } else {
+        document.getElementById("span").innerHTML = "PASSWORD not matched"
+        return false;
+      }
+    }
+    func1 = () => {
+      document.getElementsByName("p1").innerHTML = ""
+      document.getElementsByName("p2").innerHTML = ""
+      document.getElementsByName("span").innerHTML = ""
+      return true;
+    }
+  </script>
+</head>
+
+<body>
+  <form action="acbc.jsp" onsubmit="return func()" onreset="return func1()"></form>
+  <label for="">Enter Password</label>
+  <input type="text" id="p1"><br>
+  <label for="">Re-Enter Password</label>
+  <input type="text" id="p2"><br>
+  <input type="submit" value="validate">
+  <input type="reset" value="re-enter">
+  <div id="span"></div>
+
+</body>
+
+</html>

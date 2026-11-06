@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    fun1=()=>{
+      document.getElementById("id1").value="you are selected"
+    }
+     fun2=()=>{
+      document.getElementById("id1").value="you are  not selected"
+    }
+    fun4=()=>{
+      m=document.getElementById("id2").value
+      if (m===""){
+        document.getElementById("span1").innerHTML="*should not be empty"
+         document.getElementById("id2").focus()
+      }
+    }
+  fun6=()=>{
+      m=document.getElementById("id3").value
+      if (m===""){
+        document.getElementById("span2").innerHTML="*should not be empty"
+         document.getElementById("id3").focus()
+      }
+    }
+  </script>
+</head>
+<body>
+  <input onfocus="fun1()" onblur="fun2()" value="ramu" id="id1"> 
+  <span style="color: red; border: 2px solid black;">*</span>
+   <input onblur="fun4()" id="id2"> 
+  <span style="color: red;" id="span1">*</span>
+   <input onblur="fun6()" id="id3"> 
+  <span style="color: red;" id="span2">*</span>
+ 
+</body>
+</html>

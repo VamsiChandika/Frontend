@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let marks = [2, 3, 4, 5, 6, 7, 4]
+        document.write(marks.filter((mark) => mark > 2)+"<br>")
+
+    document.write(marks.map((mark) => mark + 2)+"<br>")
+    document.write(marks)
+    document.write(marks.findIndex(mark=>mark==4)+"<br>")
+
+    document.write(marks.reduce((mark,map)=>mark+map)+"<br>")
+    document.write(marks.every(mark=>mark>=2)+"<br>")
+        document.write([3,4,5,4].some(mark=>mark>4)+"<br>")
+           document.write(marks.find(mark=>mark>4)+"<br>")
+       marks.forEach(element => {document.write(element)
+        
+       });
+
+
+  </script>
+</body>
+
+</html>

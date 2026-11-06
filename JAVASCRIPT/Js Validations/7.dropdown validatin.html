@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function validateform() {
+
+            if (document.getElementById('country').selectedIndex == 0 ) {
+                alert("Please select Country");
+                return false;
+            }
+        }  
+    </script>
+</head>
+
+<body>
+    <form name="f1" action="abc.jsp" onsubmit="return validateform()">
+        <label>Country</label>
+        <select id="country" name="country">
+            <option value="Select Country">Select Country</option>
+            <option value="india"> INDIA  </option>
+            <option value="usa"> USA  </option>
+            <option value="uk"> UK  </option>
+        </select>
+        <br>
+        <input type="submit" value="validate">
+</body>
+
+</html>

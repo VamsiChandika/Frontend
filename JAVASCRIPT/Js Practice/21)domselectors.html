@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  function al(){
+    k=document.getElementById("l").value
+    let m=document.getElementsByTagName("p")
+    for (let n of m){
+      n.style.backgroundColor=`${k}`;
+              n.innerHTML= `${n.innerHTML}changed to ${k} color`
+
+    }
+  }
+  alte=()=>{
+    k=document.getElementById("l").value
+       let m=document.querySelectorAll(".alt")
+      m.forEach(element => {
+        element.style.backgroundColor=`${k}`;
+        element.innerHTML= `${element.innerHTML}changed to ${k} color`
+       });
+ 
+  }
+  op=()=>{
+    document.getElementById("ta").style.display="inline"
+    k=document.getElementById("l").value
+    let m=document.getElementsByTagName("p")
+    let n=eval(document.getElementById("ta").value)
+    m[n-1].style.backgroundColor=`${k}`;
+    m[n-1].innerHTML=`task${n} changed to ${k}`
+  }
+  g=()=>{
+      
+document.bgColor=" light dark"
+document.getElementById("c").innerHTML="changed to green"
+document.getElementById("c").style.backgroundColor="green"
+  }
+</script>
+<body>
+  <button onclick="g()" id="c">green</button>
+  <br>
+  <input type="text" id="l">
+
+  <button onclick="al()">
+    all
+  </button>
+  <button onclick="alte()">alternative</button>
+  
+ 
+    <input type="number" id="ta" style="display: none;" placeholder="enter task number do you change color">
+  <button onclick="op()">
+    optional
+  </button>
+  <p>task1</p>
+  <p class="alt">task2</p>
+  <p>task3</p>
+  <p class="alt">task4</p>
+  <p>task5</p>
+  <p class="alt">task6</p>
+  
+</body>
+</html>

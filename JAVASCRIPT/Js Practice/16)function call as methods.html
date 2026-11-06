@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let student={
+       n1:35,
+       n2:87,
+       n:5,
+       add:function(){document.write(this.n1+this.n2)},//if function is called as value in an object then it is called method()
+       mul:function(){document.write(this.n*this.n1)},
+       cub:function(){document.write(this.n*this.n*this.n)},
+       square:function(){document.write(this.n*this.n)},
+ 
+
+    }
+    let{n1,n2}=student
+     document.write(n1+"<br>")
+     document.write(n2+"<br>")
+     document.write(student.n)
+     student.square()
+     student.add()
+     let nd=JSON.stringify(student)
+    document.write("<br>"+nd+"<br>")
+    ma=JSON.parse(nd)
+    console.log(ma)
+    let mam=new Array(2,3,4,5)
+    document.write(typeof(mam))
+    let time= new Date
+    document.write(time)
+
+  </script>
+  
+</body>
+</html>

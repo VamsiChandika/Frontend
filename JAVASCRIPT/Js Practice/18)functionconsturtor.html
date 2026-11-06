@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Constructor</title>
+</head>
+
+<body>
+    <script>
+        //Creating a Function Constructor
+        function Student(id, name, course) {
+            this.id = id
+            this.name = name
+            this.course = course
+        }
+        //Creating objects 
+        let student1 = new Student(101, "Anusha", "Java")
+        let student2 = new Student(102, "Ram", "Java")
+        let student3 = new Student(103, "Ravi", "Java")
+        console.log(student1);
+        console.log(student2);
+        console.log(student3);
+
+          let myObject = new Object();
+        
+        myObject.id = 101
+        myObject.name = "Ajay"
+        myObject.city = "Hyd"
+        
+console.log(myObject) 
+
+ let myMap = new Map();
+ 
+        myMap.set("id", 101)    
+        myMap.set("name", "Ajay")
+        myMap.set("city", "Hyd")    
+        
+        
+console.log(myMap)  
+// Map can remember the order of the keys   
+    </script>
+</body>
+
+</html>

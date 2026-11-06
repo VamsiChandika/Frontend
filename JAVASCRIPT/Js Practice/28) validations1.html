@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <script>
+    fun1=()=>{
+      try{
+        data=document.getElementById("od2").value
+      
+      
+      if (data===""){
+        document.getElementById("od2").focus()
+        throw new Error("name should not be empty")
+      }
+      else if (!isNaN(data)){
+        document.getElementById("od2").focus()
+        throw new Error("name should not be number")
+      }
+      else if(data.length<6 || data.length >15){
+        document.getElementById("od2").focus()
+         throw new Error("name should not be contain more than15 letters or less than 6")
+
+      }
+      else{
+      return true
+      }
+      }
+    catch(e){
+      
+      alert(`${e.message}`)
+      return false
+    }
+    }
+    
+  </script>
+</head>
+<body>
+  <form action="skakaurl" onsubmit="return fun1()">
+
+    <label>
+      name
+    </label>
+<input type="text" id="od2">
+<input type="submit" value="vaidate">
+  </form>
+  
+</body>
+</html>

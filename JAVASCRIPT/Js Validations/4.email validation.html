@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function validateform() {
+            var x = document.getElementById('email').value
+            var atposition = x.indexOf("@");
+            var dotposition = x.lastIndexOf(".");
+            if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
+                alert("Please enter a valid e-mail address");
+                return false;
+            }
+        }  
+    </script>
+</head>
+
+<body>
+    <form name="f1" action="abc.jsp" onsubmit="return validateform()">
+        Email: <input type="text" id="email" name="email"><br />
+        <input type="submit" value="validate">
+    </form>
+</body>
+
+</html>

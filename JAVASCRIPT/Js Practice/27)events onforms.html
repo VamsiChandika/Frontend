@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    fun1=()=>{
+      try{
+        res=document.getElementById("in1").value
+      rs=document.getElementById("in2").value
+     
+      if (res===""){
+          document.getElementById("in1").focus()
+       throw new Error("id should not be empty")
+    
+      
+      }
+      if (isNaN(res)){
+              throw new Error("id should  be number")
+               
+      }
+      if (rs===""){
+        document.getElementById("in2").focus()
+       throw new Error("password should not be empty")
+        
+       
+      }
+    } catch(e){
+      document.getElementById("span1").innerHTML=e.message
+      return false
+
+    }
+
+     
+    }
+  </script>
+</head>
+<body>
+  <form action="sverurl" method="get" onsubmit="return fun1()">
+<label>enter your name</label>
+<input type="text" id="in1">
+<label>password</label>
+<input type="password" id="in2">
+<br>
+<span id="span1" style="border:2px solid red;"></span>
+<input type="submit">
+<input type="reset">
+<input type="button">
+  </form>
+  
+</body>
+</html>

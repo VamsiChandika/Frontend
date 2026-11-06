@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function validateform() {
+            var num = document.getElementById('age').value
+            if (num == "") {
+                document.getElementById("span1").innerHTML = "Age should not be empty";
+                return false;
+            } else if (isNaN(num)) {
+                document.getElementById("span1").innerHTML = "Enter Numeric value only";
+                return false;
+            } else if (eval(num) < 0) {
+                document.getElementById("span1").innerHTML = "Age should not be negative";
+                return false;
+            } else if (eval(num) > 100) {
+                document.getElementById("span1").innerHTML = "Age should not be more than 100";
+                return false;
+            } else {
+                return true;
+            }
+        }  
+    </script>
+</head>
+
+<body>
+    <form name="f1" action="abc.jsp" onsubmit="return validateform()">
+        Age: <input type="text" id="age" name="num">
+        <span id="span1"></span><br>
+        <input type="submit" value="validate">
+    </form>
+</body>
+
+</html>

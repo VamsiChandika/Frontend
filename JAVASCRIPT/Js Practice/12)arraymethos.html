@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let l1=[222]
+    document.write(typeof(l1),"<br>")
+    l1.push(40)
+    l1.push(22,21,23)
+    document.write(l1,"<br>")
+    l1.unshift(23,24,67)
+    document.write(l1,"<br>")
+    document.write(l1.indexOf(56),"<br>",l1.indexOf(23))
+    l1.pop(222)
+        document.write(l1,"<br>")
+    l1.pop()
+    document.write(l1,"<br>")
+    l1.sort()
+        document.write(l1,"<br>")
+        document.write(typeof(l1[2]),"<br>")
+    l1.reverse()
+    document.write(l1,"<br>")
+        document.write(l1.includes(2),"<br>")
+        document.write(l1.join("+")+"<br>")
+        l2=l1.join(",")
+    document.write(l2[2],"<br>")
+    l1.splice(2,1,22,33,44,55)
+    document.write(l1,"<br>")
+l3=l1.slice(0,6)
+    document.write(l3,"<br>")
+
+    document.write(typeof(l1.slice(0,3)),"<br>")
+
+    document.write(l3[0],"<br>")
+
+    
+
+
+  </script>
+  
+</body>
+</html>
