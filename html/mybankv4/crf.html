@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Registration Form</title>
+</head>
+
+<body bgcolor="skyblue">
+  <header>
+    <nav align="center">
+      <h1>
+        <font color="black">Lucky Bank</font>
+      </h1>
+    </nav>
+    <nav align="center">
+      <a href="aboutbank.html">About</a> |
+      <a href="loans.html">Loans</a> |
+      <a href="branches.html">Branches</a> |
+      <a href="bf.html">Bank Feedback</a> |
+      <a href="cca.html">Customer Card Application</a> |
+      <a href="cpu.html">Customer Profile Update</a> |
+      <a href="#">Customer Registration Form</a> |
+      <a href="emical.html">EMI Calculator</a> |
+      <a href="ibl.html">Internet Banking Login</a> |
+      <a href="lec.html">Loan Eligibility Check</a> |
+      <a href="onba.html">Open New Bank Account</a>
+    </nav>
+  </header>
+  <hr>
+  <main>
+    <marquee behavior="normal" direction="toright">
+      <font color="black">THIS BANK IS THE MOST TRUSTED BANK AMONG ALL OVER THE WORLD</font>
+    </marquee>
+    <center>
+      <h3>CUSTOMER REGISTRATION FORM</h3>
+      <form align="center" action="serverurl" method="post" name="submit">
+        <table bgcolor="white" align="center" border="2px" cellpadding="5px" cellspacing="5px">
+          <tr>
+            <td><label for="id1">Customer Name</label></td>
+            <td><input type="text" placeholder="Enter Your Full Name" id="id1" name="name"></td>
+          </tr>
+          <tr>
+            <td><label for="id2">Password</label></td>
+            <ui>
+              <td><input type="password" placeholder="Enter Password" id="id2" name="password"></td>
+            </ui>
+          </tr>
+          <tr>
+            <td> <label for="id3">Confirm Password</label></td>
+            <td> <input type="password" placeholder="Re-Enter Password" id="id3" name="Confirmpassword">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id4">Email</label>
+            </td>
+            <td> <input type="email" placeholder="Enter Email" id="id4" name="email">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id5">Mobile</label>
+            </td>
+            <td> <input type="tel" placeholder="Enter Mobile Number" id="id5" name="mobile">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id6">Date Of Birth</label>
+            </td>
+            <td> <input type="date" placeholder="Enter DOB" id="id6" name="DOB">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="">Gender</label>
+            </td>
+            <td> <input type="radio" Value="Male" id="gender1" name="gender"><label for="gender1">Male</label>
+              <input type="radio" Value="Female"id="gender2" name="gender"><label for="gender2">Female</label>
+              <input type="radio" Value="Others"id="gender3" name="gender"><label for="gender3">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="id7">Account Type</label>
+            </td>
+            <td><select name="accounttype" id="id7">
+                <option value="Savings">Savings</option>
+                <option value="Zero">Zero</option>
+                <option value="Current">Current</option>
+                <option value="Joint">Joint</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td> <label for="id8">Aadhar Number</label>
+            </td>
+            <td> <input type="number" placeholder="xxxx-xxxx-xxxx" id="id8" name="aadharnumber">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id9">PAN upload</label>
+            </td>
+            <td> <input type="file" id="id9" name="panupload">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id10">Address</label>
+            </td>
+            <td> <textarea rows="5" cols="10" placeholder="#.........." id="id10" name="address"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id11">Terms</label>
+            </td>
+            <td> <input type="checkbox" value="I Agree" id="id11" name="terms">I Agree
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Submit">
+              <input type="reset" value="Reset">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </center>
+  </main><br><br>
+  <hr>
+  <footer>
+    <center>
+      <font color="Blue">copyright@luckybank</font>
+    </center>
+    <address>
+      <font color="black">#SR Nagar,500055,</font><br>
+      <font color="black"> Hyderabad,</font><br>
+      <font color="black"> India.</font>
+    </address>
+  </footer>
+</body>
+
+</html>

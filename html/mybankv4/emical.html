@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMI Calculator</title>
+</head>
+
+<body bgcolor="skyblue">
+  <header>
+    <nav align="center">
+      <h1>
+        <font color="black">Lucky Bank</font>
+      </h1>
+    </nav>
+    <nav align="center">
+      <a href="aboutbank.html">About</a> |
+      <a href="loans.html">Loans</a> |
+      <a href="branches.html">Branches</a> |
+      <a href="bf.html">Bank Feedback</a> |
+      <a href="cca.html">Customer Card Application</a> |
+      <a href="cpu.html">Customer Profile Update</a> |
+      <a href="crf.html">Customer Registration Form</a> |
+      <a href="#">EMI Calculator</a> |
+      <a href="ibl.html">Internet Banking Login</a> |
+      <a href="lec.html">Loan Eligibility Check</a> |
+      <a href="onba.html">Open New Bank Account</a>
+    </nav>
+  </header>
+  <hr>
+  <main>
+    <marquee behavior="normal" direction="toright">
+      <font color="black">THIS BANK IS THE MOST TRUSTED BANK AMONG ALL OVER THE WORLD</font>
+    </marquee>
+    <center>
+      <caption>
+        <h3>EMI CALCULATOR</h3>
+      </caption>
+      <form align="center" action="serverurl" method="post" name="calculate">
+        <table bgcolor="white" align="center" border="2px" cellpadding="5px" cellspacing="5px">
+          <tr>
+            <td><label for="id1">Loan Amount</label>
+            </td>
+            <td> <input type="number" id="id1" name="loanamount">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id2">Interest Rate (%)</label>
+            </td>
+            <td> <input type="number" id="id2" name="interestrate">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id3">Loan Tenure Type</label>
+            </td>
+            <td><select name="loantenuretype" id="id3">
+                <option value="Select">Select</option>
+                <option value="days">Days</option>
+                <option value="Weeks">Weeks</option>
+                <option value="Months">Month</option>
+                <option value="years">Years</option>
+                </select< /td>
+          </tr>
+          <tr>
+            <td> <label for="id4">Loan Tenure Period</label>
+            </td>
+            <td> <input type="number" id="id4" name="loantenureperiod"></td>
+          </tr>
+          <tr>
+            <td><label for="id5">EMI Start Date</label></td>
+            <td> <input type="date" id="id5" name="EMIstartdate">
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td> <input type="submit" value="Calculate">
+              <input type="reset" value="Reset">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </center>
+  </main><br><br><br><br><br><br><br><br><br><br>
+  <hr>
+  <footer>
+    <center>
+      <font color="Blue">copyright@luckybank</font>
+    </center>
+    <address>
+      <font color="black">#SR Nagar,500055,</font><br>
+      <font color="black"> Hyderabad,</font><br>
+      <font color="black"> India.</font>
+    </address>
+  </footer>
+</body>
+
+</html>

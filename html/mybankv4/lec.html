@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Eligibility Check</title>
+</head>
+
+<body bgcolor="skyblue">
+  <header>
+    <nav align="center">
+      <h1>
+        <font color="black">Lucky Bank</font>
+      </h1>
+    </nav>
+    <nav align="center">
+      <a href="aboutbank.html">About</a> |
+      <a href="loans.html">Loans</a> |
+      <a href="branches.html">Branches</a> |
+      <a href="bf.html">Bank Feedback</a> |
+      <a href="cca.html">Customer Card Application</a> |
+      <a href="cpu.html">Customer Profile Update</a> |
+      <a href="crf.html">Customer Registration Form</a> |
+      <a href="emical.html">EMI Calculator</a> |
+      <a href="ibl.html">Internet Banking Login</a> |
+      <a href="#">Loan Eligibility Check</a> |
+      <a href="onba.html">Open New Bank Account</a>
+    </nav>
+  </header>
+  <hr>
+  <main>
+    <marquee behavior="normal" direction="toright">
+      <font color="black">THIS BANK IS THE MOST TRUSTED BANK AMONG ALL OVER THE WORLD</font>
+    </marquee>
+    <center>
+      <h3>LOAN ELIGIBILITY CHECK</h3>
+      <form align="center" action="serverurl" method="post" name="Check Eligibility">
+        <table bgcolor="white" align="center" border="2px" cellpadding="5px" cellspacing="5px">
+          <tr>
+            <td> <label for="id1">Name</label>
+            </td>
+            <td> <input type="text" placeholder="Enter Your Full Name"  id="id1" name="name">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id2">Annual Income</label>
+            </td>
+            <td> <input type="number" placeholder="In Rupees" id="id2" name="annualincome">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id3">Existing EMI</label>
+            </td>
+            <td> <input type="number" placeholder="In Rupees" id="id3" name="existingEMI">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="">Employment</label>
+            </td>
+            <td><input type="radio" value="salaried" id="emp1" name="Employment"><label for="emp1">salaried</label>
+              <input type="radio" value="bussiness" id="emp2" name="Employment"><label for="emp2">Bussiness</label>
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id4">Loan Type</label></td>
+            <td> <select name="loantype" id="id4">
+                <option value="Selct">Select</option>
+                <option value="home">Home</option>
+                <option value="personal">Personal</option>
+                <option value="educational">Educational</option>
+                <option value="bussiness">Bussiness</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td><label for="id5">Loan Amount</label></td>
+            <td> <input type="number" placeholder="In Rupees" id="id5" name="loanamount">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id6">Start Date</label>
+            </td>
+            <td> <input type="date" placeholder="Enter DOB" id="id6" name="startdate">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id7">Purpose</label>
+            </td>
+            <td> <textarea rows="3" cols="25" placeholder="#.........." id="id7" name="purpose"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td> <input type="submit" value="Check Eligibility"></td>
+          </tr>
+        </table>
+      </form>
+    </center>
+  </main><br><br><br><br><br>
+  <hr>
+  <footer>
+    <center>
+      <font color="Blue">copyright@luckybank</font>
+    </center>
+    <address>
+      <font color="black">#SR Nagar,500055,</font><br>
+      <font color="black"> Hyderabad,</font><br>
+      <font color="black"> India.</font>
+    </address>
+  </footer>
+</body>
+
+</html>

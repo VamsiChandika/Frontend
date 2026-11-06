@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branch Feedback</title>
+</head>
+
+<body bgcolor="skyblue">
+  <header>
+    <nav align="center">
+      <h1>
+        <font color="black">Lucky Bank</font>
+      </h1>
+    </nav>
+    <nav align="center">
+      <a href="aboutbank.html">About</a> |
+      <a href="loans.html">Loans</a> |
+      <a href="branches.html">Branches</a> |
+      <a href="#">Bank Feedback</a> |
+      <a href="cca.html">Customer Card Application</a> |
+      <a href="cpu.html">Customer Profile Update</a> |
+      <a href="crf.html">Customer Registration Form</a> |
+      <a href="emical.html">EMI Calculator</a> |
+      <a href="ibl.html">Internet Banking Login</a> |
+      <a href="lec.html">Loan Eligibility Check</a> |
+      <a href="onba.html">Open New Bank Account</a>
+    </nav>
+  </header>
+  <hr>
+  <main>
+    <marquee behavior="normal" direction="toright">
+      <font color="black">THIS BANK IS THE MOST TRUSTED BANK AMONG ALL OVER THE WORLD</font>
+    </marquee>
+    <center>
+      <h3>BRANCH FEEDBACK</h3>
+      <form align="center" action="serverurl" method="post" name="submit">
+        <table bgcolor="white" align="center" border="2px" cellpadding="5px" cellspacing="5px">
+          <tr>
+            <td><label for="id1">Name</label>
+            </td>
+            <td> <input type="text" placeholder="Enter Your Full Name" id="id1" name="name">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id2">Email</label>
+            </td>
+            <td> <input type="email" placeholder="Enter Email" id="id2" name="email">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="id3">Branch</label>
+            </td>
+            <td> <select name="branch" id="id3">
+                <option value="Select">Select</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Machilipatnam">Machilipatnam</option>
+                <option value="Vijayawada">Vijayawada</option>
+                <option value="Vizag">Vizag</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td><label for="id4">Visit Date</label></td>
+            <td> <input type="date" placeholder="Enter DOB" id="id4" name="VisitDate">
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="">Rating</label>
+            </td>
+            <td> <input type="radio" Value="Excellent" id="rating1" name="rating"><label for="rating1">Excellent</label>
+              <input type="radio" Value="Good" id="rating2" name="rating"><label for="rating2">Good</label>
+              <input type="radio" Value="Average" id="rating3" name="rating"><label for="rating3">Average</label>
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="">Services Used</label>
+            </td>
+            <td><input type="checkbox" value="ATM" id="services1" name="Services"><label for="services1">ATM</label>
+              <input type="checkbox" value="Loan" id="services2" name="Services"><label for="services2">Loan</label>
+              <input type="checkbox" value="Account" id="services3" name="Services"><label for="services3">Account</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="id5">Suggestions</label></td>
+            <td><textarea rows="3" cols="25" id="id5" name="name5"></textarea></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="submit" value="Submit">
+              <input type="reset" value="Reset">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </center>
+  </main><br><br><br><br><br><br><br>
+  <hr>
+  <footer>
+    <center>
+      <font color="Blue">copyright@luckybank</font>
+    </center>
+    <address>
+      <font color="black">#SR Nagar,500055,</font><br>
+      <font color="black"> Hyderabad,</font><br>
+      <font color="black"> India.</font>
+    </address>
+  </footer>
+</body>
+
+</html>
